@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rohit Bhupathiraju</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+      body{
+	  width: 100%;
+	  height: 100vh;
+	  color: #fff;
+	  background: linear-gradient(-45deg, #ee7752, #E73C7E, #23A6D5, #23d5AB);
+	  background-size: 400% 400%;
+	  position: relative;
+	  animation: change 10s ease-in-out infinite;
+	  margin:0;
+      }
+
+      @keyframes change{
+	  0% {
+	      background-position: 0 50%;
+	  }
+	  50% {
+	      background-position: 100% 50%;
+	  }
+	  100% {
+	      background-position: 0 50%;
+	  }
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;">
+    <div style="margin-top: 8.2px; margin-left: 8px" class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+      </div>  
+    
+    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center> Name: Rohit Bhupathiraju</center></h1>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Journal: J1006</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Date: 25-Aug-2022</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I recieved help from: My Dad</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I helped: Sameer, Namay, Ameen, and Arav</h3>
+    <hr>
+    <p>
+      1.1: What is Git communicating to you?
+      <br>
+      It is communicating what I commited to the git, the specific commit tag, and some details on when I did it
+      <br>
+      <br>
+      1.2: What do you see that is common between this git log command and the previous git commit?
+      <br>
+      The git log shows me what i commited to the git when I entered "git commit"  as well as the time and date it happened.
+      <br>
+      <br>
+      1.3: Why do you think this is?
+      <br>
+      This is because it is logging to the system everytime I commit, so it shows up when I git log in order to keep track of what changes I made.
+      <br>
+      2.1: What do you notice about file1.txt and file2.txt? How are they displayed in git status?
+      <br>
+      File1 is displayed in the git status as a file that has a new change that needs to be added. However, file2 is under untracked files since we just created it inside of the directory.
+      <br>
+      <br>
+      2.2: Are they both displayed in the same section? If not, why not?
+      <br>
+      They aren't in the same section because one of the files has new changes added to it and the other file was just created.
+      <br>
+      <br>
+      3.1: What do you notice about file1.txt and file2.txt? How are they displayed in git status?
+      <br>
+      Both file1 and file2 are displayed as added but they still need to be commited.
+      <br>
+      <br>
+      3.2: Compare and contrast the manner in which the two files are displayed.
+      <br>
+      file1 is a modified file that needs to be commited and file2 has been created and needs to be commited.
+      <br>
+      <br>
+      4.1: How many files are listed as having been changed?
+      <br>
+      2 files are listed as having been changed.
+      <br>
+      <br>
+      4.2: What are the specific differences listed for each file? In what color is the difference displayed?
+      <br>
+      The differences that are listed for each file is what was added to it and they are displayed in the color green.
+      <br>
+      <br>
+      5.1: Execute the commands
+      <br>
+      Git didn't return anything because no changes to the files were made after they were commited.
+    </p>
+    <hr>
+    <p>
+      What did I learn? What is the "big idea"?
+      <br>
+      How to use git in order to keep my files safe and store backups of them.
+      <br>
+      <br>
+      What challenges did I encounter?
+      <br>
+      I didn't really encounter and challenges
+      <br>
+      <br>
+      How could this experience be improved?
+      <br>
+      N/A
+      <br>
+      <br>
+      Free Reflection: How has what I've learned affected my thinking?
+      <br>
+      This has greatly affected my thinking by showing me a way to backup all my files which will assist me greatly in the future in case of an irreversible mistake.
+    </p>
+
+    <script>
+      function dropdown() {
+	  document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	      var dropdowns = document.getElementsByClassName("dropdown-content");
+	      var i;
+	      for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Hello, World</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <title>Rohit Bhupathiraju</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body style="background-color:rgb(55, 183, 222);">
+    <div class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1017.html">J1017</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+      </div>    
+    
+    <h1 style="font-family: 'Roboto', sans-serif;">Rohit Bhupathiraju</h1>
+    <br>
+    <h3 style="font-family: 'Roboto', sans-serif; font-size: 17px">My CS-1 Jounal Entries</h3>
+    <hr style="height:3px; background-color: black;">
+    <a href='Journals/J1002.html' style="font-family: 'Roboto', sans-serif; font-size: 20px">J1002</a>
+    <br>
+    <br>
+    <a href='Journals/J1006.html' style="font-family: 'Roboto', sans-serif; font-size: 20px">J1006</a>
+    <br>
+    <br>
+    <a href='Journals/J1012.html' style="font-family: 'Roboto', sans-serif; font-size: 20px">J1012</a>
+    <br>
+    <br>
+    <a href='Journals/J1013.html' style="font-family: 'Roboto', sans-serif; font-size: 20px">J1013</a>
+    <br>
+    <br>
+    <a href='Journals/J1016.html' style="font-family: 'Roboto', sans-serif; font-size: 20px">J1016</a> 
+
+    <script>
+      function dropdown() {
+	  document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	      var dropdowns = document.getElementsByClassName("dropdown-content");
+	      var i;
+	      for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>   

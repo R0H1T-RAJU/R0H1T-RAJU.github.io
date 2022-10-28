@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rohit Bhupathiraju</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+      body{
+	  width: 100%;
+	  height: 100vh;
+	  color: #fff;
+	  background: linear-gradient(-45deg, #ee7752, #E73C7E, #23A6D5, #23d5AB);
+	  background-size: 400% 400%;
+	  position: relative;
+	  animation: change 10s ease-in-out infinite;
+	  margin:0;
+      }
+
+      @keyframes change{
+	  0% {
+	      background-position: 0 50%;
+	  }
+	  50% {
+	      background-position: 100% 50%;
+	  }
+	  100% {
+	      background-position: 0 50%;
+	  }
+      } 
+    </style>
+  </head>
+  
+  <body style="font-family: 'Roboto', sans-serif;">
+    <div style="margin-top: 8.2px; margin-left: 8px" class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+      </div>   
+    
+    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center> Name: Rohit Bhupathiraju</center></h1>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Journal: J1002</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Date: 23-Aug-2022</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I recieved help from: No one</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I helped: Hayden, Sameer, Ameen, Arav</h3>
+    <hr>
+    <p>
+      1.1: Name at least two other services that you personally use which are implemented using a Client/Server Model
+      <br>
+      Discord and Fortnite
+      <br>
+      <br>
+      2.1: It appears that both Jack Williams and John Williams can have a directory of the same name. Do you think the ability to have two different users create a directory of the same name is important? Why?
+      <br>
+      Better organization for both users so it's easier for the teacher to know what and where files and
+      folders are.
+      <br>
+      <br>
+      3.1: Why do you think the home directory has a special symbol to represent it?
+      <br>
+      So it distinguishes itself from the other files in order for the user to easily find it.
+      <br>
+      <br>
+      4.1: Did the prompt change? If so, how? Why is this useful?
+      <br>
+      Yes, so the user can easily see what directory they are currently in.
+      <br>
+      <br> 
+      5.1: What happens each time you press the &#8593?
+      <br>
+      It goes to the previous command that the user typed in
+      <br>
+      <br> 
+      5.2: What happens each time you press the &#8595?
+      <br>
+      It goes to the command entered after the user's current command.
+      <br>
+      <br> 
+      6.1: Was "Hello, World!" printed to the screen as before? If not, why not? What do you think happened to the text?
+      <br>
+      It wasn't printed to the screen because we echoed the text into a file and not the terminal.
+      <br>
+      <br> 
+      7.1: How does the ls command differ from the tree command?
+      <br>
+      The ls command only shows the files and folders in the current directory, but the tree command also
+      shows files in all the subdirectories.
+      <br>
+      <br>
+      7.2: How do you choose to use one over the other?
+      I would use the ls command to make sure all my files are there and know whats in the current directory.
+      I would use the tree command if I wanted to see everything in my subdirectories.
+      <br>
+      <br>
+      8.1: What do you think the argument to sleep specifies?
+      <br>
+      How many seconds the program will sleep for.
+      <br>
+      <br>
+      8.2: Are you able to prove your hypothesis? How?
+      <br>
+      I was able to prove my hypothesis by running the code and counting until it finished executing.
+      <br>
+      <br>
+      9.1: How is the behavior different from what you expected?
+      <br>
+      I thought it wouldn't let me use the terminal while it ran.
+      <br>
+      <br>
+      9.2: What do you think it means to run a job in the background?
+      <br>
+      It will run and still allow the user to use the terminal as normal.
+      <br>
+      <br>
+      9.3: What do you think the number displayed in brackets specifies?
+      <br>
+      The index of the job.
+      <br>
+      <br>
+      10.1: What do you observe as you execute the jobs command?
+      <br>
+      It shows the list of jobs that were created and if they are running or finished.
+      <br>
+      <br>
+      10.2: How do you explain your observations?
+      <br>
+      The terminal shows the names of the jobs that I created
+    </p>
+    <hr>
+    <p>
+      What did I learn? What is the "big idea"?
+      <br>
+      I learned how to efficiently use the tabby terminal and useful commands to make my work easier.
+      <br>
+      <br>
+      What challenges did I encounter?
+      <br>
+      I didn't really encounter any problems during this lesson.
+      <br>
+      <br>
+      How could this experience be improved?
+      <br>
+      N/A
+      <br>
+      <br>
+      Free Reflection: How has what I've learned affected my thinking?
+      <br>
+      It affected my thinking by showing me there are shortcuts to many long and tedious tasks. In the future I will
+      continue finding quicker ways to do simple tasks.
+    </p>
+
+    <script>
+      function dropdown() {
+	  document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	      var dropdowns = document.getElementsByClassName("dropdown-content");
+	      var i;
+	      for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rohit Bhupathiraju</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+    </style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;">
+    <div style="margin-top: 8.2px; margin-left: 8px" class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1017.html">J1017</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+      </div>  
+    
+    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center> Name: Rohit Bhupathiraju</center></h1>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Journal: J1012</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Date: 7-Sep-2022</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I recieved help from: No One</h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I helped: Sameer</h3>
+    <hr>
+    <p>
+      1.1: Describe the general process for executing addition, regardless of base.
+      <br>
+      First align the digits vertically, then add each column starting from the right. If the sum of the column is 2 digits carry the tens place digit to the next column and repeat the process for all the columns.
+      <br>
+      <br>
+      2.1: What special factors need to be considered when executing addition with octal numbers?
+      <br>
+      Add each digit as usual, but if the sum is larger than 7 add 2 in order to convert it into base 8.
+      <br>
+      <br>
+      3.1: What special factors need to be considered when executing addition with hexadecimal numbers?
+      <br>
+      On the last column, if the sum is greater than 9 and less than 16 use letters to represent the sum (A-F).
+      <br>
+      <br>
+      4.1: What special factors need to be considered when executing addition with binary numbers?
+      <br>
+      If the sum of a column is 2 or 3, the binary number is 10 and 11 respectively, and you must carry the one.
+    </p>
+    <hr>
+    <p>
+      What did I learn? What is the "big idea"?
+      <br>
+      I learned how to add base 8, base 16, and binary numbers.
+      <br>
+      <br>
+      What challenges did I encounter?
+      <br>
+      I was confused on how to add base 16 numbers due to the inclusion of letters.
+      <br>
+      <br>
+      How could this experience be improved?
+      <br>
+      It could be improved by explaining the addition process in more depth.
+      <br>
+      <br>
+      Free Reflection: How has what I've learned affected my thinking?
+      <br>
+      This affected my thinking by introducing addition of new bases and binary.
+    </p>
+
+    <script>
+      function dropdown() {
+	  document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	      var dropdowns = document.getElementsByClassName("dropdown-content");
+	      var i;
+	      for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>

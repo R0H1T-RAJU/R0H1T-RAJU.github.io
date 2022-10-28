@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  </style>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Portfolio</title>
+  </head>
+
+  <body>
+    <div class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a> 
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1017.html">J1017</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+    </div>
+
+    <h1 style="font-family: 'Roboto', sans-serif; text-align: center;">Rohit Bhupathiraju - Digital Portfolio</h1>
+    <br>
+
+    <div class="aboutMe">
+      <h1 style="font-size: 30px;">About Me: </h1>
+      <p>Hobbies - Programming, Videogames, Tennis</p>
+      <p>Birthday - March 6!</p>
+      <p>Currently a Sophomore in Allen High School</p>
+      <p>Hobbies - Coding, Videogames, Hanging out with friends</p>
+      <p>Favorite Subjects - Math and Science</p>
+      <p>I mainly program in Python and Java</p>
+      <p>Another Program I made in the Past - <a href='https://toysfortexans-g474t5z3lq-uc.a.run.app/' target="_blank">Grant Software for a Nonprofit</a></p>
+      <img class="grantSoftwareImg" src="CS-I/Journals/Pictures/grantSoftware.png"; alt="grant software">
+    </div>
+
+    
+    <script>
+      function dropdown() {
+          document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                  }
+              }
+          }
+      }
+
+      const pressed = [];
+      const secretCode = "bored";
+
+      window.addEventListener("keyup", (e) => {
+	  pressed.push(e.key)
+	  pressed.splice(-secretCode.length-1, pressed.length-secretCode.length)
+	  if(pressed.join("").includes(secretCode)) {
+	      window.alert("Hidden Game Found")
+	      window.open("game.html", "_blank")
+	  }
+      })
+    </script>
+  </body>
+</html>               
