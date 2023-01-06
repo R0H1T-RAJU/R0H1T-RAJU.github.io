@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rohit Bhupathiraju</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+    </style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;">
+    <div style="margin-top: 8.2px; margin-left: 8px" class="buttons">
+      <button onclick="dropdown()" class="dropbtn">Journals</button>
+      <div id="journals" class="dropdown-content">
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1006.html">J1006</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+      </div>
+
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+    </div>   
+    
+    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center> Name: Rohit Bhupathiraju</center></h1>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Journal: </h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Date: </h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I recieved help from: </h3>
+    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I helped: </h3>
+    <hr>
+    <p>
+    </p>
+    
+    <hr>
+    
+    <p>
+    </p>
+
+    <script>
+      function dropdown() {
+	  document.getElementById("journals").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	      var dropdowns = document.getElementsByClassName("dropdown-content");
+	      var i;
+	      for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>
