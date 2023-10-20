@@ -3,37 +3,14 @@
 
   <head>
     <title>Rohit Bhupathiraju</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../../style.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
-
-      body{
-	  width: 100%;
-	  height: 100vh;
-	  color: #fff;
-	  background: linear-gradient(-45deg, #ee7752, #E73C7E, #23A6D5, #23d5AB);
-	  background-size: 400% 400%;
-	  position: relative;
-	  animation: change 10s ease-in-out infinite;
-	  margin:0;
-      }
-
-      @keyframes change{
-	  0% {
-	      background-position: 0 50%;
-	  }
-	  50% {
-	      background-position: 100% 50%;
-	  }
-	  100% {
-	      background-position: 0 50%;
-	  }
-      }
     </style>
   </head>
   <body style="font-family: 'Roboto', sans-serif;">
-    <div style="margin-top: 8.2px; margin-left: 8px" class="buttons">
+    <div class="buttons">
       <button onclick="dropdown()" class="dropbtn">Journals</button>
       <div id="journals" class="dropdown-content">
 	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1002.html">J1002</a>
@@ -41,27 +18,27 @@
 	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1012.html">J1012</a>
 	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1013.html">J1013</a>
 	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1016.html">J1016</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1017.html">J1017</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1089.html">J1089</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1151.html">J1151</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1151.xml">J1151 XML</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1152.html">J1152</a>
+	<a href="/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Journals/J1153.html">J1153</a>
       </div>
 
       <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio';" class="dropbtn">About Me</button>
       <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/important.html';" class="dropbtn">Why This Is Important</button>
       <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I';" class="dropbtn">CS-I</button>
+      <button onclick="location.href='/users/rohit-bhupathiraju/Digital Portfolio/CS-I/Projects/ISP';" class="dropbtn">ISP</button>
     </div>   
     
-    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center> Name: Rohit Bhupathiraju</center></h1>
-    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Journal: </h3>
-    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">Date: </h3>
-    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I recieved help from: </h3>
-    <h3 style="font-family: 'Roboto', sans-serif; weight: 500; font-size: 17px">I helped: </h3>
+    <h1 style="font-family: 'Roboto', sans-serif; weight: 500;"><center>ISP Journal Entries</center></h1>
     <hr>
-    <p>
-    </p>
-    
-    <hr>
-    
-    <p>
-    </p>
 
+    <div>
+      <a href="Journal.html" style="font-family: 'Roboto', sans-serif; font-size: 20px">Journal 1</a>
+    </div>
+    
     <script>
       function dropdown() {
 	  document.getElementById("journals").classList.toggle("show");

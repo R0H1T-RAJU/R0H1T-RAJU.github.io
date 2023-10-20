@@ -87,6 +87,11 @@ img {
     display: block;
 }
 
+.buttons {
+    margin-top: 8.2px;
+    margin-left: 8px
+}
+
 .dropdown-content a:hover {background-color: rgb(119, 116, 116);}
 
 .show {display: block;}
